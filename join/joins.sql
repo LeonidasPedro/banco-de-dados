@@ -9,9 +9,8 @@ from emprestimos as e
 join usuarios as u on (e.id_usuario = u.id)
 join emprestimos_livros as el on (e.id = el.id_emprestimo)
 join livros as l on (el.id_livro = l.id)
-join sessoes as s on (l.id_sessao = s.id)
 
-WHERE s.id = 4
+WHERE l.id_sessao = 4
 
 --------------------------------------------------------------------------------------------------------
 
